@@ -1,0 +1,92 @@
+.navbar-content,
+.navbar-left,
+.navbar-right,
+.navbar-right-oppurtunity-lists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.navbar{
+    border-bottom: 1px solid #cbcbcb;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-content{
+    padding: 5px 3%;
+}
+.nav-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #e6e6e6;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.nav-search:hover {
+    border-color: #999;
+}
+
+.nav-search:focus-within {
+    border: 2px solid rgb(64, 64, 255);
+}
+
+.nav-search-icon {
+    color: #999;
+    font-size: 18px;
+}
+
+.nav-search-input {
+    all: unset;
+    width: 300px;
+    font-size: 14px;
+}
+.navbar-right-oppurtunity-item{
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navbar-right-oppurtunity-item:hover{
+    background-color: rgb(244, 244, 244);
+}
+.nav-auth-button {
+    font-size: 16px;
+    color: white;
+    background-color: #0073e6;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-auth-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #005cb7;
+    transition: left 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.nav-auth-button:hover:before {
+    left: 0;
+}
+
+.navbar-right-item{
+    padding: 10px;
+}
+
+.navbar-right-item-icon{
+    font-size: 18px;
+    color: #353535;
+}

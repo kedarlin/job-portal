@@ -1,0 +1,11 @@
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    padding-top: 100px;
+}
+.landing-left, .landing-right{
+    flex: 1;
+}

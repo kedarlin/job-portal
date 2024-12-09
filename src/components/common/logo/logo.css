@@ -1,0 +1,15 @@
+/* .logo{
+    padding: 10px;
+} */
+.logo-title{
+    font-size: 22px;
+    color: #1c4980;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.logo-left{
+    color: #fff;
+    background-color: #1c4980;
+    padding: 8px 4px;
+    border-radius: 50%;
+}
