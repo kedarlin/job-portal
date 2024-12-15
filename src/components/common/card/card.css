@@ -1,5 +1,29 @@
 .card{
-    padding: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
     width: fit-content;
+    height: 175px;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card-content{
+    background-size: 200px;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 15px;
+    height: 100%;
+}
+.card-title{
+    color: #383838;
+    font-weight: 600;
+    font-size: 18px;
+}
+.card-desc{
+    font-size: 14px;
+    color: #383838;
+    margin-top: 10px;
 }

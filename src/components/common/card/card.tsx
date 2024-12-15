@@ -16,16 +16,21 @@ function Card({ title, description, imagePath, color }: cardProp) {
       }}
     >
       <div
+        className="card-content"
         style={{
-          backgroundImage: `url(${imagePath})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          backgroundImage: `url('${imagePath}')`,
           backgroundColor: `${color}`,
         }}
       >
         <h3 className="card-title">{title}</h3>
-        <p className="card-desc">{description}</p>
+        <p className="card-desc">
+          {description.split(" ").map((word, index) => (
+            <span key={index}>
+              {word}
+              <br />
+            </span>
+          ))}
+        </p>
       </div>
     </div>
   );

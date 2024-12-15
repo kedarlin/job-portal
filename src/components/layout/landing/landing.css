@@ -1,11 +1,37 @@
 .landing{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 200px 10% 100px 10%;
+    background-color: #f6f6f6;
+}
+.landing-content{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
-    padding-top: 100px;
 }
 .landing-left, .landing-right{
     flex: 1;
+}
+.landing-left-title{
+    font-size: 44px;
+    color: #393939;
+}
+.landing-left-title-span{
+    color: #1c4980;
+}
+.landing-left-desc{
+    margin-top: 15px;
+    color: #888;
+    font-size: 18px;
+}
+.landing-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.landing-carousel{
+    margin-top: 200px;
 }
