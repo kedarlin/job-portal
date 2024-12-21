@@ -10,10 +10,10 @@
 }
 .navbar{
     border-bottom: 1px solid #cbcbcb;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color: #ffffff;
-    padding: 5px 0;
     z-index: 1;
 }
 .navbar-content{
@@ -48,18 +48,25 @@
     font-size: 14px;
 }
 .navbar-right-oppurtunity-item{
-    padding: 10px 15px;
+    padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
+    border: 1px solid #fff;
 }
-.navbar-right-oppurtunity-item:hover{
+.navbar-right-oppurtunity-item.active {
+    border-color: #0073e6;
+    color: #0073e6;
+    font-weight: 500;
+}
+.navbar-right-oppurtunity-item:not(.active):hover{
     background-color: rgb(244, 244, 244);
 }
 .nav-auth-button {
     font-size: 16px;
     color: white;
     background-color: #0073e6;
-    padding: 10px 30px;
+    height: fit-content;
+    padding: 8px 30px;
     border-radius: 25px;
     border: none;
     cursor: pointer;

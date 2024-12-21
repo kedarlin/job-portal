@@ -1,0 +1,14 @@
+.jobs{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+.jobs-content{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    gap: 10px;
+    overflow: hidden;
+}

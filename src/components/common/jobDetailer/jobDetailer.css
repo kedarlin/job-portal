@@ -1,0 +1,145 @@
+.jobdetailer{
+    flex: 6;
+    margin: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.jobdetailer-header{
+    background-color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #333;
+}
+.jobdetailer-header-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.jobdetailer-header-head-left{
+    flex: 1;
+}
+.jobdetailer-logo{
+    height: 100px;
+    padding: 5px;
+    border: 2px solid #dbdbdb;
+    border-radius: 15px;
+}
+.jobdetailer-header-head-right{
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.jobdetailer-header-title{
+    font-size: 32px;
+    font-weight: 600;
+}
+.jobdetailer-header-company{
+    font-size: 16px;
+}
+.jobdetailer-header-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.jobdetailer-header-location, .jobdetailer-header-postedon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.jobdetailer-apply{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobdetailer-apply-button {
+    font-size: 16px;
+    color: white;
+    background-color: #0073e6;
+    height: fit-content;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.jobdetailer-apply-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #005cb7;
+    transition: left 0.4s ease-in-out;
+    z-index: -1;
+}
+.jobdetailer-apply-button:hover:before{
+    left: 0;
+}
+
+.jobdetailer-application-details{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.jobdetailer-application-details > *{
+    flex: 1;
+}
+
+.jobdetailer-eligibility{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
+.jobdetailer-description{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
+
+.jobdetailer-additional-details{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+}
