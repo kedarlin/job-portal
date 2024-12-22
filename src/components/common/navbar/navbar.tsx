@@ -1,25 +1,36 @@
-import { useState } from 'react';
-import { FaBell, FaSearch } from 'react-icons/fa';
-import Logo from '../logo/logo';
-import './navbar.css';
-import { FaMessage } from 'react-icons/fa6';
-import { IoPerson } from 'react-icons/io5';
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { FaBell, FaSearch } from "react-icons/fa";
+import Logo from "../logo/logo";
+import "./navbar.css";
+import { FaMessage } from "react-icons/fa6";
+import { IoPerson } from "react-icons/io5";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigation = useNavigate();
-  const [selectedItem, setSelectedItem] = useState<string>('');
+  const [selectedItem, setSelectedItem] = useState<string>("");
 
   const handleNavigation = (item: string, path: string) => {
     setSelectedItem(item);
     navigation(path);
   };
 
+  const location = useLocation();
+  useEffect(
+    () =>
+      handleNavigation(location.pathname.slice(1), location.pathname.slice(1)),
+    []
+  );
+  console.log(location.pathname.slice(1));
+
   return (
     <div className="navbar">
       <div className="navbar-content">
         <div className="navbar-left">
-          <div onClick = {() => handleNavigation('Home', '/')} style={{cursor : "pointer"}}>
+          <div
+            onClick={() => handleNavigation("Home", "/")}
+            style={{ cursor: "pointer" }}
+          >
             <Logo />
           </div>
           <div className="nav-search">
@@ -36,42 +47,53 @@ function Navbar() {
           <div className="navbar-right-oppurtunity-lists">
             <div
               className={`navbar-right-oppurtunity-item ${
-                selectedItem === 'Internships' ? 'active' : ''
+                selectedItem === "jobs" ? "active" : ""
               }`}
-              onClick={() => handleNavigation('Internships', '/internships')}
-            >
-              Internships
-            </div>
-            <div
-              className={`navbar-right-oppurtunity-item ${
-                selectedItem === 'Jobs' ? 'active' : ''
-              }`}
-              onClick={() => handleNavigation('Jobs', '/jobs')}
+              onClick={() => handleNavigation("jobs", "/jobs")}
             >
               Jobs
             </div>
             <div
               className={`navbar-right-oppurtunity-item ${
-                selectedItem === 'Watchlist' ? 'active' : ''
+                selectedItem === "internships" ? "active" : ""
               }`}
-              onClick={() => handleNavigation('Watchlist', '/watchlist')}
+              onClick={() => handleNavigation("internships", "/internships")}
+            >
+              Internships
+            </div>
+            <div
+              className={`navbar-right-oppurtunity-item ${
+                selectedItem === "watchlist" ? "active" : ""
+              }`}
+              onClick={() => handleNavigation("watchlist", "/watchlist")}
             >
               Wishlist
             </div>
             <div
               className={`navbar-right-oppurtunity-item ${
-                selectedItem === 'Applications' ? 'active' : ''
+                selectedItem === "applications" ? "active" : ""
               }`}
-              onClick={() => handleNavigation('Applications', '/applications')}
+              onClick={() => handleNavigation("applications", "/applications")}
             >
               Applications
             </div>
           </div>
           <div
             className="navbar-right-user-section"
-            style={{ display: 'flex', flexDirection: 'row', gap: '20px', alignItems: "center" }}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "20px",
+              alignItems: "center",
+            }}
           >
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
               <div className="navbar-right-item">
                 <FaMessage className="navbar-right-item-icon" />
               </div>
@@ -82,7 +104,10 @@ function Navbar() {
                 <IoPerson className="navbar-right-item-icon" />
               </div>
             </div>
-            <button onClick={() => {}} className="nav-auth-button">
+            <button
+              onClick={() => handleNavigation("login", "/login")}
+              className="nav-auth-button"
+            >
               Login
             </button>
           </div>
