@@ -1,0 +1,134 @@
+.applications-wrap{
+    background-color: #f6f6f6;
+    padding: 10px 10%;
+}
+.applications{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.applications-title{
+    color: #444;
+    padding: 10px 0;
+}
+.applications-tabs{
+    margin: 0 -15px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+.applications-tab{
+    cursor: pointer;
+    padding: 15px 0;
+    border-bottom: 5px solid #ffffff00;
+}
+.applications-tab.active{
+    color: #0073e6;
+    border-bottom: 5px solid #0073e6;
+}
+.applications-tab-content{
+    display: flex;
+    flex-direction: column;
+}
+.applications-tab-filter-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    gap: 15px;
+}
+.applications-tab-search {
+    flex: 7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #e6e6e6;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.navapplications-tab-search:focus-within {
+    border: 2px solid #000;
+}
+
+.applications-tab-search-icon {
+    color: #444;
+    font-size: 14x;
+}
+
+.applications-tab-search-input {
+    all: unset;
+    width: 100%;
+    font-size: 14px;
+}
+.applications-tab-filter{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border: 2px #e6e6e6 solid;
+    border-radius: 25px;
+}
+.applications-tab-filter-item{
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #555;
+}
+.applications-tab-filter-item.active{
+    color: #0073e6;
+}
+.applications-tab-sort-dropdown{
+    all: unset;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 20px;
+    border: 2px #e6e6e6 solid;
+    color: #555;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.applications-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.applications-pagination, .applications-current-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.applications-pagination{
+    margin-top: 20px;
+}
+.applications-page{
+    padding: 10px 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.applications-page.active{
+    background-color: #00376e;
+    color: #fff;
+    border-color: #00376e;
+}

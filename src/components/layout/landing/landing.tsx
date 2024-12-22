@@ -2,16 +2,16 @@ import Card from "../../common/card/card";
 import "./landing.css";
 import intern_bg_img from "../../../assets/intern_thumbnail.png";
 import job_bg_img from "../../../assets/jobs_thumbnail.png";
+import SlidingBrands from "../../common/slidingBrands/slidingBrands";
 
 function Landing() {
-  // const brandLogos = [];
 
   return (
     <div className="landing">
       <div className="landing-content">
         <div className="landing-left">
           <h1 className="landing-left-title">
-            <span className="landing-left-title-span">Set </span>
+            <span className="landing-left-title-span">Find </span>
             Your Career
           </h1>
           <p className="landing-left-desc">
@@ -35,16 +35,10 @@ function Landing() {
         </div>
       </div>
       <div className="landing-carousel">
-        <div className="landing-carousel-title">
-          Industry Vetarans
-          <br />
-          <span>Trust us</span>
-        </div>
-        <div className="carousel-list">
-          <div className="carousel-item">
-            <img src='' alt="" />
-          </div>
-        </div>
+        <SlidingBrands
+          small={"Industry veterans"}
+          title={"Trust us:"}
+        />
       </div>
     </div>
   );

@@ -52,9 +52,9 @@ function Navbar() {
             </div>
             <div
               className={`navbar-right-oppurtunity-item ${
-                selectedItem === 'Wishlist' ? 'active' : ''
+                selectedItem === 'Watchlist' ? 'active' : ''
               }`}
-              onClick={() => setSelectedItem('Wishlist')}
+              onClick={() => handleNavigation('Watchlist', '/watchlist')}
             >
               Wishlist
             </div>
@@ -62,7 +62,7 @@ function Navbar() {
               className={`navbar-right-oppurtunity-item ${
                 selectedItem === 'Applications' ? 'active' : ''
               }`}
-              onClick={() => setSelectedItem('Applications')}
+              onClick={() => handleNavigation('Applications', '/applications')}
             >
               Applications
             </div>
