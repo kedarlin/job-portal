@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaBell, FaSearch } from "react-icons/fa";
 import Logo from "../logo/logo";
 import "./navbar.css";
 import { FaMessage } from "react-icons/fa6";
 import { IoPerson } from "react-icons/io5";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigation = useNavigate();
