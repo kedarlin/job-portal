@@ -15,14 +15,6 @@ function Navbar() {
     navigation(path);
   };
 
-  const location = useLocation();
-  useEffect(
-    () =>
-      handleNavigation(location.pathname.slice(1), location.pathname.slice(1)),
-    []
-  );
-  console.log(location.pathname.slice(1));
-
   return (
     <div className="navbar">
       <div className="navbar-content">
