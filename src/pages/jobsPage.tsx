@@ -1,3 +1,4 @@
+import Footer from "../components/common/footer/footer"
 import Navbar from "../components/common/navbar/navbar"
 import Jobs from "../components/layout/jobs/jobs"
 
@@ -7,7 +8,7 @@ const JobsPage = () => {
     <div className='jobspage'>
         <Navbar />
         <Jobs />
-        <Navbar />
+        <Footer />
     </div>
   )
 }

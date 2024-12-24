@@ -20,7 +20,7 @@ function Navbar() {
       <div className="navbar-content">
         <div className="navbar-left">
           <div
-            onClick={() => handleNavigation("Home", "/")}
+            onClick={() => handleNavigation("Home", "/home")}
             style={{ cursor: "pointer" }}
           >
             <Logo />
