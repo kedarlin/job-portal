@@ -3,7 +3,7 @@ import SignupThumbnail from "../../assets/job_login.png";
 import Logo from "../../components/common/logo/logo";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import SignupDetails from "./SignupDetails";
+import SignupDetails from "./signupDetails";
 import { FaMars, FaVenus } from "react-icons/fa";
 
 const Signup = () => {
