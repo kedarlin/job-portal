@@ -36,7 +36,7 @@ const Login = () => {
             <p className="login-error">Please enter password</p>
             <button
               className="login-submit-button"
-              onClick={() => navigation("/")}
+              onClick={() => navigation("/home")}
             >
               Login
             </button>

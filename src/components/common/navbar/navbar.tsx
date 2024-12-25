@@ -59,7 +59,7 @@ function Navbar() {
               }`}
               onClick={() => handleNavigation("watchlist", "/watchlist")}
             >
-              Wishlist
+              Watchlist
             </div>
             <div
               className={`navbar-right-oppurtunity-item ${
@@ -84,6 +84,7 @@ function Navbar() {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
+                gap: "5px"
               }}
             >
               <div className="navbar-right-item">
@@ -92,7 +93,7 @@ function Navbar() {
               <div className="navbar-right-item">
                 <FaBell className="navbar-right-item-icon" />
               </div>
-              <div className="navbar-right-item">
+              <div className="navbar-right-item" onClick={() => handleNavigation("profile", "/profile")}>
                 <IoPerson className="navbar-right-item-icon" />
               </div>
             </div>

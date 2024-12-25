@@ -5,6 +5,7 @@ import JobsPage from "./pages/jobsPage";
 import InternshipsPage from "./pages/internshipsPage";
 import ApplicationsPage from "./pages/applicationsPage";
 import Signup from "./pages/signup/signup";
+import WatchlistPage from "./pages/watchlistPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/internships" element={<InternshipsPage />} />
         <Route path="/applications" element={<ApplicationsPage />} />
+        <Route path="/watchlist" element={<WatchlistPage />} />
       </Routes>
     </Router>
   );
