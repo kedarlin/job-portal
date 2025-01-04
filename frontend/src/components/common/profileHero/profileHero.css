@@ -1,0 +1,95 @@
+.profile-hero{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.profile-hero-banner{
+    position: relative;
+}
+.profile-hero-banner-img{
+    width: 100%;
+}
+.profile-hero-banner-edit-icon{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    margin-top: 10px;
+    right: 20px;
+    color: #005cb7;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.profile-hero-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.profile-hero-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.profile-hero-dp-img{
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    margin: 10px;
+}
+.profile-hero-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.profile-hero-detail-name{
+    font-weight: 500;
+    font-size: 24px;
+}
+.profile-hero-detail-username{
+    color: #666;
+    font-size: 16px;
+}
+.profile-hero-detail-workplace, .profile-hero-detail-resume{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    font-weight: 500;
+    align-items: center;
+}
+.profile-hero-detail-icon{
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+.profile-hero-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:end;
+    gap: 20px;
+}
+.profile-hero-edit-button{
+    all: unset;
+    background-color: #005cb7;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.profile-hero-edit-button:hover{
+    background-color: #00478e;
+}

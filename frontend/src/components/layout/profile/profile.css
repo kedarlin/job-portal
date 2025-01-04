@@ -1,0 +1,62 @@
+.profile{
+    padding: 15px 10%;
+    background-color: #f3f3f4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.profile-detail-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.profile-detail-section-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.profile-detail-section-about{
+    font-size: 14px;
+    color: #555;
+}
+.profile-detail-section-resume{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.profile-detail-section-resume p:hover{
+    cursor: pointer;
+    color: #005cb7;
+}
+.profile-detail-section-skills{
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+.profile-detail-section-skills p{
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 15px;
+}
+.profile-detail-section:not(:nth-last-child(1)){
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+}

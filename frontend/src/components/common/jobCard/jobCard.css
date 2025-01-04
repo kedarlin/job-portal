@@ -4,7 +4,7 @@
     cursor: pointer;
 }
 .jobcard:hover{
-    border-left-color: #000;
+    border-left: 5px solid #000; /*not working*/
 }
 .jobcard-wrap{
     padding: 15px;

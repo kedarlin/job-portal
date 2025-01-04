@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import './App.css';
 import Login from "./pages/login/login";
 import LandingPage from "./pages/landingPage";
 import JobsPage from "./pages/jobsPage";
@@ -6,6 +7,7 @@ import InternshipsPage from "./pages/internshipsPage";
 import ApplicationsPage from "./pages/applicationsPage";
 import Signup from "./pages/signup/signup";
 import WatchlistPage from "./pages/watchlistPage";
+import ProfilePage from "./pages/profilePage";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/internships" element={<InternshipsPage />} />
         <Route path="/applications" element={<ApplicationsPage />} />
         <Route path="/watchlist" element={<WatchlistPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </Router>
   );
