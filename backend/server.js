@@ -5,6 +5,16 @@ import connection from './connection/connection.js';
 const app = express();
 app.use(cors());
 
+//connecting to DB
+connection()
+    .then(
+        console.log('Succesfully Connected to DB')
+    )
+    .catch((error) => {
+        console.log(`error has occured :${error}`);
+    });
+
+
 // Root route
 app.get('/', (req, res) => {
     res.send('<h1>Hello, Express.js Server!</h1>');
